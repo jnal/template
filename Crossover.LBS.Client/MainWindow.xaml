@@ -1,0 +1,29 @@
+﻿<Window x:Class="Crossover.LBS.Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crossover.LBS.Client"
+        mc:Ignorable="d"
+        Title="LAN Backup Client" Height="350" Width="453.504">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="403*"/>
+            <ColumnDefinition Width="115*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid AutoGenerateColumns="False" Name="dgSchedule" Grid.ColumnSpan="2" Margin="0,0,0.4,0.4">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Schedule" Binding="{Binding Schedule}" Width="100" />
+                <DataGridTextColumn Header="Source" Binding="{Binding SourcePath}" Width="150" />
+                <DataGridTextColumn Header="Destination" Binding="{Binding DestinationPath}" Width="150" />
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="btnRun_Click" >Run</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

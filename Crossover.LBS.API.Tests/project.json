@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0-*",
+
+  "testRunner": "mstest",
+
+  "dependencies": {
+    "Crossover.LBS.API.Business": "1.0.0-*",
+    "Crossover.LBS.API.Contracts": "1.0.0-*",
+    "dotnet-test-mstest": "1.1.1-preview",
+    "Microsoft.EntityFrameworkCore.InMemory": "1.1.0-alpha1-21973",
+    "MSTest.TestFramework": "1.0.0-preview",
+    "RestSharp": "105.2.3"
+  },
+
+  "frameworks": {
+    "net461": {}
+  }
+}

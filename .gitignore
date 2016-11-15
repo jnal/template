@@ -3,3 +3,20 @@
 ################################################################################
 
 /Crossover.LBS.API/bin/Debug/net461
+/Crossover.LBS.API/obj/Debug/net461
+/Crossover.LBS.API.Business/bin/Debug/net461
+/Crossover.LBS.API.Business/obj/Debug/net461
+/Crossover.LBS.API.Contracts/bin/Debug/net461
+/Crossover.LBS.API.Contracts/obj/Debug/net461
+/Crossover.LBS.API.Tests/bin/Debug/net461
+/Crossover.LBS.API.Tests/obj/Debug/net461
+/Crossover.LBS.API.Tests/obj/Debug/net461
+/Crossover.LBS.Client/bin/Debug
+/Crossover.LBS.API.Tests/obj/Debug/net461
+/Crossover.LBS.Client/obj/Debug
+/Crossover.LBS.Web/bin/Release
+/Crossover.LBS.Web/bin/Debug/net461
+/Crossover.LBS.Web/bin/Debug/net461
+/Crossover.LBS.Web/node_modules
+/Crossover.LBS.Web/obj
+/packages

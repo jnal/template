@@ -1,0 +1,26 @@
+<table class="table table-no-border table-default-bg" style="width: 100%; text-align: center; margin-top: 30px;">
+    <colgroup>
+        <col class="col-sm-3" />
+        <col class="col-sm-9" />
+    </colgroup>
+    <thead>
+    <tr>
+        <th>Timestamp</th>
+        <th>Message</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let log of logs">
+            <td>{{log.logDate | date:'medium' }}</td>
+            <td>{{log.message}}</td>
+        </tr>
+    </tbody>
+</table>
+  <button (click)="goBack()">Back</button>
+
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

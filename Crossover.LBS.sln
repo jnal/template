@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{4B9A4E8E-D980-4897-A87F-AB8082796E7D}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Crossover.LBS.API", "Crossover.LBS.API\Crossover.LBS.API.xproj", "{10440440-30E5-47A4-AC0E-F4AB2F048FDD}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Crossover.LBS.API.Business", "Crossover.LBS.API.Business\Crossover.LBS.API.Business.xproj", "{9F505DF6-2243-4A1A-A3F6-83D2A6A4F301}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Crossover.LBS.API.Contracts", "Crossover.LBS.API.Contracts\Crossover.LBS.API.Contracts.xproj", "{0A082A45-C87B-47D1-BFD6-0CD6C5B122B7}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Crossover.LBS.API.Tests", "Crossover.LBS.API.Tests\Crossover.LBS.API.Tests.xproj", "{874BF04C-C68A-4916-8E57-0581C956E3B4}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Crossover.LBS.Web", "Crossover.LBS.Web\Crossover.LBS.Web.xproj", "{054996D2-BDE3-4299-905B-D1EF814D4485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crossover.LBS.Client", "Crossover.LBS.Client\Crossover.LBS.Client.csproj", "{C5023F59-2898-43D7-AF48-64093AFC2A83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10440440-30E5-47A4-AC0E-F4AB2F048FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10440440-30E5-47A4-AC0E-F4AB2F048FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10440440-30E5-47A4-AC0E-F4AB2F048FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10440440-30E5-47A4-AC0E-F4AB2F048FDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F505DF6-2243-4A1A-A3F6-83D2A6A4F301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F505DF6-2243-4A1A-A3F6-83D2A6A4F301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F505DF6-2243-4A1A-A3F6-83D2A6A4F301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F505DF6-2243-4A1A-A3F6-83D2A6A4F301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A082A45-C87B-47D1-BFD6-0CD6C5B122B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A082A45-C87B-47D1-BFD6-0CD6C5B122B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A082A45-C87B-47D1-BFD6-0CD6C5B122B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A082A45-C87B-47D1-BFD6-0CD6C5B122B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874BF04C-C68A-4916-8E57-0581C956E3B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874BF04C-C68A-4916-8E57-0581C956E3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874BF04C-C68A-4916-8E57-0581C956E3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874BF04C-C68A-4916-8E57-0581C956E3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{054996D2-BDE3-4299-905B-D1EF814D4485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054996D2-BDE3-4299-905B-D1EF814D4485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054996D2-BDE3-4299-905B-D1EF814D4485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054996D2-BDE3-4299-905B-D1EF814D4485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5023F59-2898-43D7-AF48-64093AFC2A83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5023F59-2898-43D7-AF48-64093AFC2A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5023F59-2898-43D7-AF48-64093AFC2A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5023F59-2898-43D7-AF48-64093AFC2A83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10440440-30E5-47A4-AC0E-F4AB2F048FDD} = {4B9A4E8E-D980-4897-A87F-AB8082796E7D}
+		{9F505DF6-2243-4A1A-A3F6-83D2A6A4F301} = {4B9A4E8E-D980-4897-A87F-AB8082796E7D}
+		{0A082A45-C87B-47D1-BFD6-0CD6C5B122B7} = {4B9A4E8E-D980-4897-A87F-AB8082796E7D}
+		{874BF04C-C68A-4916-8E57-0581C956E3B4} = {4B9A4E8E-D980-4897-A87F-AB8082796E7D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfsapp-na2-03q:8080/tfs/hrt
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Crossover.LBS.API.Business\\Crossover.LBS.API.Business.xproj
+		SccProjectTopLevelParentUniqueName1 = Crossover.LBS.sln
+		SccProjectName1 = Crossover.LBS.API.Business
+		SccLocalPath1 = Crossover.LBS.API.Business
+		SccProjectUniqueName2 = Crossover.LBS.API.Contracts\\Crossover.LBS.API.Contracts.xproj
+		SccProjectTopLevelParentUniqueName2 = Crossover.LBS.sln
+		SccProjectName2 = Crossover.LBS.API.Contracts
+		SccLocalPath2 = Crossover.LBS.API.Contracts
+		SccProjectUniqueName3 = Crossover.LBS.API.Tests\\Crossover.LBS.API.Tests.xproj
+		SccProjectTopLevelParentUniqueName3 = Crossover.LBS.sln
+		SccProjectName3 = Crossover.LBS.API.Tests
+		SccLocalPath3 = Crossover.LBS.API.Tests
+		SccProjectUniqueName4 = Crossover.LBS.API\\Crossover.LBS.API.xproj
+		SccProjectTopLevelParentUniqueName4 = Crossover.LBS.sln
+		SccProjectName4 = Crossover.LBS.API
+		SccLocalPath4 = Crossover.LBS.API
+		SccProjectUniqueName5 = Crossover.LBS.Client\\Crossover.LBS.Client.csproj
+		SccProjectName5 = Crossover.LBS.Client
+		SccLocalPath5 = Crossover.LBS.Client
+	EndGlobalSection
+EndGlobal

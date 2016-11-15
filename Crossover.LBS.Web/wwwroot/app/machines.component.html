@@ -1,0 +1,63 @@
+<h2>Machines</h2>
+<div>
+    <label>IP Address:</label> <input #ipAddress  />
+  <button (click)="add(ipAddress.value); ipAddress.value=''">
+    Add
+  </button>
+</div>
+<ul class="machines">
+  <li *ngFor="let machine of machines" (click)="onSelect(machine)"
+      [class.selected]="machine === selectedMachine">
+    <span class="badge">{{machine.id}}</span>
+      <span [ngClass]="{inactive: !machine.isActive }">{{machine.ipAddress}}</span>
+
+      <button class="action" (click)="delete(machine); $event.stopPropagation()">x</button>
+      <button class="action" (click)="enableDisable(machine); $event.stopPropagation()">o</button>
+  </li>
+</ul>
+<div *ngIf="selectedMachine">
+    <h2>
+        Backup configuration for {{ selectedMachine.ipAddress }} 
+        
+    </h2>
+    <button (click)="gotoAddBackupConfig()">Add New Backup</button>
+    <table class="table table-no-border table-default-bg" style="width: 100%; text-align: center; margin-top: 30px;">
+        <colgroup>
+            <col class="col-sm-3" />
+            <col class="col-sm-3" />
+            <col class="col-sm-2"  />
+            <col class="col-sm-1" />
+            <col class="col-sm-3" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Triggers</th>
+            <th>Last Run Time</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <tr *ngFor="let backupConfig of selectedMachine.backupConfigs">
+            <td>{{backupConfig.sourcePath}}</td>
+            <td>{{backupConfig.destinationPath}}</td>
+            <td>{{backupConfig.schedule | date:'medium' }}</td>
+            <td>{{backupConfig.lastRun | date:'medium' }}</td>
+            <td><button (click)="gotoEditBackupConfig(backupConfig.id)">Edit</button> <button (click)="deleteBackupConfig(backupConfig)">Delete</button> <button (click)="gotoLogs(backupConfig.id)">View Logs</button> </td>
+        </tr>
+
+
+
+        </tbody>
+    </table>
+  
+</div>
+
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

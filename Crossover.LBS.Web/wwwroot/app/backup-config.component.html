@@ -1,0 +1,81 @@
+<div *ngIf="backupConfig">
+    <h2>Backup config details</h2>
+    <div *ngIf="backupConfig.id">
+        <label>id: </label>{{backupConfig.id}}
+    </div>
+
+    <div>
+        <label>schedule: </label>
+    </div><div>
+
+        <input [(ngModel)]="backupConfig.schedule" ng2-datetime-picker
+               date-format="MM-DD-YYYY hh:mm"
+               year="2014"
+               month="12"
+               day="31"
+               hour="23"
+               minute='59'
+               close-on-select="false" class="form-control" />
+
+    </div> <br />
+
+    <fieldset style="width:200px">
+        <legend>Source</legend>
+        <div class="form-group">
+            <label>path: </label>
+            <input [(ngModel)]="backupConfig.sourcePath" placeholder="source" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>domain: </label>
+            <input [(ngModel)]="backupConfig.sourceDomain" placeholder="domain" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>username: </label>
+            <input [(ngModel)]="backupConfig.sourceUsername" placeholder="username" class="form-control" />
+        </div><div class="form-group">
+            <label>password: </label>
+
+            <input [(ngModel)]="backupConfig.sourcePassword" placeholder="password" type="password" class="form-control" />
+        </div>
+    </fieldset> <br />
+    <fieldset style="width:200px">
+        <legend>Destination</legend>
+
+        <div>
+            <label>path: </label>
+        </div>
+
+        <div>
+            <input [(ngModel)]="backupConfig.destinationPath" placeholder="destination" class="form-control" />
+        </div>
+
+        <div>
+            <label>domain: </label>
+        </div>
+
+        <div>
+            <input [(ngModel)]="backupConfig.destinationDomain" placeholder="domain" class="form-control" />
+        </div>
+        <div>
+            <label>username: </label>
+        </div>
+        <div>
+            <input [(ngModel)]="backupConfig.destinationUsername" placeholder="username" class="form-control" />
+        </div><div>
+            <label>password: </label>
+        </div>
+        <div>
+            <input [(ngModel)]="backupConfig.destinationPassword" placeholder="password" type="password" class="form-control" />
+        </div>
+
+
+    </fieldset>
+    <button (click)="goBack()" class="btn btn-primary" type="submit">Back</button>
+    <button (click)="save()" class="btn btn-default">Save</button>
+    <!--
+    Copyright 2016 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license
+    -->
+</div>
